@@ -1,2 +1,2 @@
 # TGSystems
-Tertiary Grading System
+tertiary Institutions Grading Systems

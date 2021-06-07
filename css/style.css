@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+.item {
+    background: url(/images/make.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*
+background-position: right top;
+*/
+
+.message {
+    background-color: rgba(190, 109, 16, 0.5);
+    z-index: 3;
+    padding-top: 100px;
+
+}
+
+.message p {
+    color: white;
+    background-color: rgba(11, 135, 65, 0.596);
+    margin: auto;
+    border-radius: 60px;
+    font-size: 3em;
+    width: fit-content;
+    padding: 8px 30px;
+    text-transform: capitalize;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#ca_in {
+    text-align: center;
+}
+
+#enter {
+    width: 150px;
+    height: 50px;
+    font-size: 2em;
+    margin: auto;
+    z-index: 50;
+    position: absolute;
+    left: calc(50% - 75px);
+    top: 420px;
+    text-align: center;
+    color: red;
+    border: 2px solid rgba(11, 135, 65, 0.596);
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: rgba(190, 109, 16, 0.651);
+}
+
+#enter a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#enter a:hover {
+    color: rgb(165, 170, 165);
+    text-shadow: rgb(216, 209, 209);
+}
+
+/* Dedicated Area for the footer Begins*/
+
+footer {
+    height: 2em;
+}
+
+.small_f {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small_f div {
+    width: 50%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 6px;
+    line-height: 2em;
+}
+
+.small_f div a {
+    color: rgba(11, 135, 65, 0.856);
+    line-height: 2em;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dialbutton p i, .chart p i {
+    color: white;
+    background-color: rgba(11, 135, 65, 0.856);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.copy p {
+    line-height: 2em;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 590px) {
+    .small_f {
+        flex-direction: column;
+    }
+    .small_f div {
+        width: 100%;
+    }
+}
+
+/* Dedicated Area for the footer Ends*/
+
+/* Beginnig of Fully dedicated side category bar area */
+
+.sidebarandslider {
+    margin-bottom: 30px;
+}
+
+.hero {
+    padding-bottom: 50px;
+}
+
+.hero.hero-normal {
+    padding-bottom: 30px;
+}
+
+.hero.hero-normal .hero__categories {
+    position: relative;
+}
+
+.hero.hero-normal .hero__categories ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 46px;
+    width: 100%;
+    z-index: 9;
+    background: #ffffff;
+}
+
+.hero__categories__all {
+    background: rgb(91, 22, 25);
+    position: relative;
+    padding: 10px 25px 10px 40px;
+    cursor: pointer;
+}
+
+.hero__categories__all i {
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.hero__categories__all span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero__categories ul {
+    border: 2px solid #ebebeb;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.hero__categories ul li {
+    list-style: none;
+}
+
+.hero__categories ul li a {
+    font-size: 16px;
+    color: #1c1c1c;
+    line-height: 39px;
+    display: block;
+}
+
+.hero__categories ul li a:hover {
+    color: rgb(91, 22, 25);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main_categories>li {
+    display: none;
+}
+
+.main_categories>li.active {
+    display: block;
+}
+
+.main_categories {
+    height: 0px;
+    visibility: hidden;
+    transition: .8s;
+}
+
+.main_categories.active {
+    visibility: visible;
+    height: 400px;
+    overflow-y: scroll;
+    transition: ease-in-out;
+    transition: .8s;
+}
+
+#chevron {
+    position: absolute;
+    right: 18px;
+    top: 13px;
+    font-size: 18px;
+    color: #ffffff;
+    transform: rotate(0deg);
+    transition: .8s;
+}
+
+#chevron.active {
+    transform: rotate(-540deg);
+    transition: .8s;
+}
+
+/* End of Fully dedicated side category bar area */

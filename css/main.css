@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Dedicated Area for the footer Begins*/
+
+footer {}
+
+.small_f {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small_f div {
+    width: 50%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 6px;
+    line-height: 2em;
+}
+
+.small_f div a {
+    color: rgba(11, 135, 65, 0.856);
+    line-height: 2em;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dialbutton p i, .chart p i {
+    color: white;
+    background-color: rgba(11, 135, 65, 0.856);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.copy p {
+    line-height: 2em;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 590px) {
+    .small_f {
+        flex-direction: column;
+    }
+    .small_f div {
+        width: 100%;
+    }
+    .small_f div a {}
+}
+
+/* Dedicated Area for the footer Ends*/
+
+/* For the select space for Inst. and Program in start  (Beginning) */
+
+.container {
+    max-width: 700px;
+    background-color: rgba(0, 255, 255, 0.144);
+    background-color: rgba(11, 135, 65, 0.329);
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.info {
+    padding-top: 25px;
+}
+
+.info p {
+    margin: auto;
+    text-align: center;
+    max-width: 40em;
+    font-size: 1.6em;
+    background-color: rgba(190, 109, 16, 0.555);
+    font-family: 'Newsreader', serif;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+}
+
+.instart {
+    width: 100%;
+    /*background-color: rgba(0, 255, 255, 0.144);*/
+    background: url(../images/bg.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-image: url(../images/bg.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel-body, .panel, .btn-group {
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+.btn-group {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+@media only screen and (max-width: 590px) {
+    .info {
+        font-size: 0.5em;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+    .info p {
+        padding: 10px 5px 5px 5px;
+        margin: auto;
+    }
+}
+
+#proceed {
+    background-color: rgba(190, 109, 16);
+    border-radius: 8px;
+    color: white;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+
+#proceed:hover {
+    color: black;
+}
+
+/* For the select space for Inst. and Program in start  (Ending) */
+
+/* The result Table area */
+
+.tablearea {
+    padding: 10px;
+}
+
+.tablearea>h3, .semtable {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.tablearea>button {
+    text-align: center;
+    margin-left: 30%;
+}
+
+.tablearea table tr td:nth-child(2) {
+    text-align: left;
+    width: fit-content;
+    max-width: 214px;
+}
+
+.totals, td.totals {
+    text-align: center;
+}
+
+/* Dedicated for the program Name are  */
+
+#programName {
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.school>p {
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+  /* For the Logo */
+
+  #logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: calc(50% - 40px);
+    bottom: 0;
+    z-index: 5;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+#logo>img {
+    width: 100px;
+    height: 100px;
+    padding: 0px 10px 20px 10px;
+
+}
